@@ -1,0 +1,11 @@
+<div class="container" >
+
+    <div class="left-side" >
+      <app-world-image (countrySelected)="onCountrySelected($event)" />
+    </div>
+
+    <div class="right-side" >
+      <app-world-info [countryInfo]="countryInfo" />
+    </div>
+    
+</div>

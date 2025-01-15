@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .left-side {
+    flex: 3;
+  }
+  
+  .right-side {
+    flex: 1;
+  }
