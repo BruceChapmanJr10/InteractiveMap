@@ -14,10 +14,21 @@ export class WorldImageComponent {
 
   constructor(private apiService: ApiService) {}
 
-  onClick(event: MouseEvent){
-    const path = event.target as SVGAElement;
+  onMouseOver(event: MouseEvent){
+    const path = event.target as SVGPathElement;
+    const paths = document.querySelectorAll('path')
     const countryId = path.getAttribute('id');
     console.log('Country code:', countryId);
+    paths.forEach((p) => {
+      if(p === path){
+      p.style.fill = 'blue'
+      }
+      else{
+        p.style.fill = ''
+      }
+    })
+    
+    
     
     if (countryId) {
       this.apiService
