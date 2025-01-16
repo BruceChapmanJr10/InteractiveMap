@@ -21,7 +21,7 @@ export class WorldImageComponent {
     console.log('Country code:', countryId);
     paths.forEach((p) => {
       if(p === path){
-      p.style.fill = 'blue'
+      p.style.fill = 'grey'
       }
       else{
         p.style.fill = ''

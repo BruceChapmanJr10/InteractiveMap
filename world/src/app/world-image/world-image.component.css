@@ -1,0 +1,10 @@
+svg {
+    background-color: rgb(99, 90, 90);
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
